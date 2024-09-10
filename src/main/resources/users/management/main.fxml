@@ -10,8 +10,8 @@
             fx:controller="users.management.MainController">
     <top>
         <HBox spacing="10" alignment="center">
-            <Button text="Table View" onAction="#showTableView" />
-            <Button text="Creation View" onAction="#showCreationView" />
+            <Button fx:id="dataButton" text="Table View" onAction="#showTableView" />
+            <Button fx:id="moreButton" text="Creation View" onAction="#showCreationView" />
         </HBox>
     </top>
     <center>

@@ -2,9 +2,20 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
 
 <VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="users.management.TableController" spacing="10" alignment="center">
-    <Label fx:id="label"/>
+     <TableView fx:id="tableView">
+        <columns>
+            <TableColumn text="Name" fx:id="nameColumn"/>
+            <TableColumn text="Email" fx:id="emailColumn"/>
+            <TableColumn text="Phone" fx:id="phoneColumn"/>
+            <TableColumn text="Address" fx:id="addressColumn"/>
+            <TableColumn text="City" fx:id="cityColumn"/>
+            <TableColumn text="State" fx:id="stateColumn"/>
+            <TableColumn text="Zip" fx:id="zipColumn"/>
+        </columns>
+    </TableView>
 </VBox>
-
-
